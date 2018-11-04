@@ -12,7 +12,7 @@ use h1b\interfaces\ICsvParse;
 
 class CsvParse implements ICsvParse
 {
-    public function csv2generator(string $filePath): \Generator {
+    public static function csv2generator(string $filePath): \Generator {
         $handle = fopen($filePath, 'r');
 
         while(!feof($handle)) {

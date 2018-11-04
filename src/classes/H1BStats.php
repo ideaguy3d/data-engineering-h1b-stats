@@ -8,11 +8,21 @@
 
 namespace h1b;
 
+use h1b\CsvParse;
 use h1b\interfaces\IH1BStats;
 
 class H1BStats implements IH1BStats
 {
     public function __construct() {}
+
+    public function top10calculate(string $folderPath): void {
+        $filePath = glob($folderPath . "\*.csv")[0];
+
+        foreach (CsvParse::csv2generator($filePath) as $record) {
+            var_dump($record);
+            $break = "point";
+        }
+    }
 
     public function readInputFile(string $folderPath): void {
 

@@ -18,5 +18,5 @@ interface ICsvParse
      *
      * @return \Generator
      */
-    public function csv2generator(string $filePath): \Generator;
+    public static function csv2generator(string $filePath): \Generator;
 }
