@@ -7,7 +7,6 @@
 build/*
 config/settings.yml
 app.yaml
-.idea
 **/**/settings.php
 pmod-app/csv/*
 **/**/*.csv
