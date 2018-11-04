@@ -1,0 +1,16 @@
+/vendor/
+/logs/*
+!/logs/README.md
+.idea
+**/vendor
+**/settings.yml
+build/*
+config/settings.yml
+app.yaml
+.idea
+**/**/settings.php
+pmod-app/csv/*
+**/**/*.csv
+vids
+*.mp4
+_elevate-recoveries/vids/php-sql.mp4

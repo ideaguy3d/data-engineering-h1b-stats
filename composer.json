@@ -1,0 +1,47 @@
+{
+    "name": "h1b stats",
+    "description": "solving a fun data engineering problem set",
+    "keywords": [
+        "data",
+        "engineering",
+        "php",
+        "psr7",
+        "algorithms",
+        "computer science"
+    ],
+    "homepage": "http://github.com/ideaguy3d/h1b",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Julius Alvarado",
+            "email": "javascript.uiux@gmail.com",
+            "homepage": "http://www.julius3d.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0",
+        "ext-pdo": "*",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "h1b\\": "src/classes",
+            "h1b\\interfaces\\": "src/interfaces"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=7.3"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "process-timeout": 0
+    },
+    "scripts": {
+        "start": "php -S localhost:8080 -t public",
+        "test": "phpunit"
+    }
+}
