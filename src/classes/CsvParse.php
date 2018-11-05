@@ -15,10 +15,15 @@ class CsvParse implements ICsvParse
     public static function csv2generator(string $filePath): \Generator {
         $handle = fopen($filePath, 'r');
 
-        while(!feof($handle)) {
+        while (!feof($handle)) {
             yield fgetcsv($handle, 0, ";");
         }
 
+        echo "\n.\n.\n. __>> Done Generating over data set.\n.\n.\n.";
         fclose($handle);
+    }
+
+    public static function csv2iterator(string $filePath): void {
+
     }
 }
